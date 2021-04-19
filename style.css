@@ -1,0 +1,41 @@
+body {
+    background-color: #f3dbcf;      /* Change Background Color */
+}
+h1 {
+    color: #aac9ce; 
+    text-shadow: 2px 2px white;
+}
+nav {
+    overflow: hidden;
+    background-color: #c9bbce;
+    font-size: 105%;
+    color: white;
+}
+nav > a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    padding-top: 1.1em;
+    padding-bottom: 1.1em;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #efc1cd;
+    color: rgb(255,255,255);
+}
+#name {                             /* Format name in navigation bar */
+    font-size: 140%;
+    padding-left: 0.75em;
+    line-height: 2.45;
+}
+fieldset {
+    background-color: #b6b4c2;
+}
+section {
+    display: block;
+    border: 2px;
+    background-color: #ffe5d8;
+    padding: .5em;
+}
