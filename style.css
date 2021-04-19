@@ -3,19 +3,25 @@
 
 /* Setup for body */
 body {
-    background-color: #f3dbcf;      /* Change Background Color */
+    background-color: #f3dbcf;           /* Change Background Color */
     margin: 0mm 0mm 0mm 0mm;
+}
+
+/* Setup for main */
+main {
+    margin: 5em 1.5em 0em 1.5em; 
 }
 
 /* Setup for all text */
 * {
-    font-family: 'Roboto', sans-serif;
+    font-family: American Typewriter, serif;
 }
 
 /* Setup for webpage title */
 h1 {
     color: #aac9ce; 
     text-shadow: 2pt 2pt white;
+    display: inline-block;
 }
 
 /* Setup for navigation bar */
@@ -28,18 +34,20 @@ nav {
     width: 100%;
     top: 0;
 }
-nav > a {                           /* Format links in navigation bar */
+nav > a {                                  /* Format links in navigation bar */
     float: right;
     color: #f2f2f2;
     text-align: center;
     padding: 1.1em .75em 1.1em .75em;
+    align-items: center;
     text-decoration: none;
+    flex: 1;
 }
-nav a:hover {                       /* Change color when hovering over nav links */
+nav a:hover {                             /* Change color when hovering over nav links */
     background-color: #efc1cd;
     color: rgb(255,255,255);
 }
-#name {                             /* Format name in navigation bar */
+#name {                                   /* Format name in navigation bar */
     font-size: 150%;
     font-family: 'Cedarville Cursive', cursive;
     letter-spacing: 1px;
@@ -63,26 +71,24 @@ fieldset {
     padding-left: 0.75em;
     padding-right: 0.75em;
 }
-legend {                            /* Format form title */
+legend {                                  /* Format form title */
     background-color: white;
     color: black; 
     text-shadow: 1.5pt 1.5pt #b6b4c2;
     padding: 5px 10px;
 }
-.submit {                           /* Format submit button */                         
+.submit {                                 /* Format submit button */                         
     text-decoration: none;
     font-size: 10pt;
     background-color: #efc1cd;
     color: white;
     border: 2px solid white;
     padding: 0.5em;
-    margin-top: 0.5em;
-    margin-bottom: 0.75em;
-    margin-left: 0.75em;
+    margin: auto;
     cursor: pointer;
 
 }
-.submit:active {       /* Format submit button when clicked */
+.submit:active {                          /* Format submit button when clicked */
     background-color: white;
     color: hsl(0, 0%, 0%);
     border-color: hsl(0, 0%, 0%);
@@ -104,7 +110,45 @@ section {
     margin-left: 5cm;
 }
 
+/* Format image and video */
+img, video {
+    width: 300px;
+    height: auto;
+}
+@media screen and (min-width: 550px) {      /* Change image and video format based on screen width */  
+    img, video {
+        width: 250px;
+        height: auto;
+    }
+}
+
+/* Format when screen is small */
+@media screen and (max-width: 550px) {
+    nav {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2px;
+        justify-items: center;
+    }
+
+    main {
+        margin: 10em 1.5em 0em 1.5em; 
+    }
+}
+
+/* Format unordered list in journal entry #1 */
+ul {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style-position: inside;
+}
+
 /* Setup for footer */
 footer {
     position: relative;
+}
+#footerTag {
+    margin-left: 1.5em; 
 }
