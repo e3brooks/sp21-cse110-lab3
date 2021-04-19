@@ -1,41 +1,110 @@
+/* 3rd party font */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+/* Setup for body */
 body {
     background-color: #f3dbcf;      /* Change Background Color */
+    margin: 0mm 0mm 0mm 0mm;
 }
+
+/* Setup for all text */
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Setup for webpage title */
 h1 {
     color: #aac9ce; 
-    text-shadow: 2px 2px white;
+    text-shadow: 2pt 2pt white;
 }
+
+/* Setup for navigation bar */
 nav {
     overflow: hidden;
     background-color: #c9bbce;
     font-size: 105%;
     color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
-nav > a {
-    float: left;
+nav > a {                           /* Format links in navigation bar */
+    float: right;
     color: #f2f2f2;
     text-align: center;
-    padding-left: 0.75em;
-    padding-right: 0.75em;
-    padding-top: 1.1em;
-    padding-bottom: 1.1em;
+    padding: 1.1em .75em 1.1em .75em;
     text-decoration: none;
 }
-nav a:hover {
+nav a:hover {                       /* Change color when hovering over nav links */
     background-color: #efc1cd;
     color: rgb(255,255,255);
 }
 #name {                             /* Format name in navigation bar */
-    font-size: 140%;
+    font-size: 150%;
+    font-family: 'Cedarville Cursive', cursive;
+    letter-spacing: 1px;
+    display: inline;
     padding-left: 0.75em;
     line-height: 2.45;
 }
+
+/* Setup for journal entry form */
 fieldset {
+    display: block;
     background-color: #b6b4c2;
+    border-color: hsl(164, 36%, 100%);
+    border-width: .5ch;
+    border-radius: .5ex;
+    border-style: solid;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
 }
+legend {                            /* Format form title */
+    background-color: white;
+    color: black; 
+    text-shadow: 1.5pt 1.5pt #b6b4c2;
+    padding: 5px 10px;
+}
+.submit {                           /* Format submit button */                         
+    text-decoration: none;
+    font-size: 10pt;
+    background-color: #efc1cd;
+    color: white;
+    border: 2px solid white;
+    padding: 0.5em;
+    margin-top: 0.5em;
+    margin-bottom: 0.75em;
+    margin-left: 0.75em;
+    cursor: pointer;
+
+}
+.submit:active {       /* Format submit button when clicked */
+    background-color: white;
+    color: hsl(0, 0%, 0%);
+    border-color: hsl(0, 0%, 0%);
+}
+
+/* Setup for journal entries */
 section {
     display: block;
     border: 2px;
     background-color: #ffe5d8;
+    border-color: hsl(164, 36%, 100%);
+    border-width: .5ch;
+    border-radius: .5ex;
+    border-style: solid;
     padding: .5em;
+    margin-top: 0mm;
+    margin-bottom: 0mm;
+    margin-right: 5cm;
+    margin-left: 5cm;
+}
+
+/* Setup for footer */
+footer {
+    position: relative;
 }
