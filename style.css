@@ -77,7 +77,7 @@ legend {                                  /* Format form title */
     text-shadow: 1.5pt 1.5pt #b6b4c2;
     padding: 5px 10px;
 }
-.submit {                                 /* Format submit button */                         
+button.submit {                                 /* Format submit button */                         
     text-decoration: none;
     font-size: 10pt;
     background-color: #efc1cd;
@@ -88,7 +88,7 @@ legend {                                  /* Format form title */
     cursor: pointer;
 
 }
-.submit:active {                          /* Format submit button when clicked */
+button.submit:active {                          /* Format submit button when clicked */
     background-color: white;
     color: hsl(0, 0%, 0%);
     border-color: hsl(0, 0%, 0%);
@@ -108,6 +108,12 @@ section {
     margin-bottom: 0mm;
     margin-right: 5cm;
     margin-left: 5cm;
+}
+section + h2 {                              /* Format entry titles */
+    font-size: 12pt;
+}
+h3 ~ p, details, ul {                            /* Format text in entries */
+    font-size: 11pt;
 }
 
 /* Format image and video */
